@@ -1,0 +1,140 @@
+<!-- ========================= student-login.html ========================= -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Student Login</title>
+
+<style>
+
+body{
+margin:0;
+font-family:Arial;
+background:#eef3ff;
+}
+
+.top{
+background:#002147;
+padding:12px;
+color:white;
+text-align:center;
+font-weight:bold;
+}
+
+.login-box{
+background:white;
+width:420px;
+margin:50px auto;
+padding:30px;
+border-radius:20px;
+text-align:center;
+}
+
+.login-box img{
+width:120px;
+border-radius:20px;
+}
+
+input{
+width:100%;
+padding:14px;
+margin-top:12px;
+border-radius:10px;
+border:1px solid #ccc;
+}
+
+button{
+width:100%;
+padding:14px;
+margin-top:15px;
+background:#002147;
+color:white;
+border:none;
+border-radius:12px;
+}
+
+.big{
+width:100%;
+margin-top:40px;
+}
+
+.txt{
+background:white;
+padding:30px;
+max-width:1000px;
+margin:30px auto;
+border-radius:20px;
+line-height:1.9;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="top">
+BNMU Student Login Portal
+</div>
+
+<div class="login-box">
+
+<img src="sks.jpg">
+
+<h2>Student Login</h2>
+
+<input type="text" id="u" placeholder="Login ID">
+
+<input type="password" id="p" placeholder="Password">
+
+<input type="text" id="c" placeholder="Captcha : 728080">
+
+<button onclick="go()">
+Login
+</button>
+
+<button>
+New Registration
+</button>
+
+</div>
+
+<img src="ss.jpg" class="big">
+
+<div class="txt">
+
+<h2>Student Notice</h2>
+
+<p>
+Welcome To BNMU Student Portal.<br>
+Please Login Using Correct ID Password.
+</p>
+
+</div>
+
+<script>
+
+function go(){
+
+let u=document.getElementById('u').value;
+let p=document.getElementById('p').value;
+let c=document.getElementById('c').value;
+
+if(u=="shivam728080" && p=="shivam@@" && c=="728080"){
+
+window.location="dashboard.html";
+
+}
+else{
+
+alert("Wrong Login");
+
+}
+
+}
+
+</script>
+
+</body>
+</html>
